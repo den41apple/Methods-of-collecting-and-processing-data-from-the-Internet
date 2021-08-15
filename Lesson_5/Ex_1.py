@@ -53,7 +53,7 @@ enter_button.click()
 
 # 1-я прокрутка для получения первых новых сообщений
 sleep(5)
-print('\rПрокрутка и получение ссылок на сообщения...' + ' '*100, end='')
+print('\rПрокрутка и получение ссылок на сообщения...', end='')
 messages_block = driver.find_element_by_class_name('dataset__items')
 messages = messages_block.find_elements_by_tag_name('a')
 
